@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" role="img" aria-labelledby="title">
+  <title>Robe rouge</title>
+  <rect width="320" height="240" fill="#fee2e2" />
+  <path d="M146 52h28l12 18-10 14 40 118H104l40-118-10-14z" fill="#dc2626" stroke="#991b1b" stroke-width="4" />
+  <path d="M146 52l-20 26M174 52l20 26" stroke="#991b1b" stroke-width="4" />
+</svg>

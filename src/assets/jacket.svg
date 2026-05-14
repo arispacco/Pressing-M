@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" role="img" aria-labelledby="title">
+  <title>Veste en laine</title>
+  <rect width="320" height="240" fill="#ede9fe" />
+  <path d="M104 56l22 24h68l22-24 28 26-18 34-26-18v106h-80V98l-26 18-18-34z" fill="#6d28d9" stroke="#4c1d95" stroke-width="4" />
+  <line x1="160" y1="80" x2="160" y2="204" stroke="#c4b5fd" stroke-width="4" />
+  <circle cx="160" cy="112" r="3" fill="#ddd6fe" />
+  <circle cx="160" cy="136" r="3" fill="#ddd6fe" />
+  <circle cx="160" cy="160" r="3" fill="#ddd6fe" />
+</svg>

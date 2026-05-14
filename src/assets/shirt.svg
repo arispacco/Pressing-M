@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" role="img" aria-labelledby="title">
+  <title>Chemise blanche</title>
+  <rect width="320" height="240" fill="#f1f5f9" />
+  <path d="M110 56l16 20h68l16-20 36 24-24 42-22-14v92H120v-92l-22 14-24-42z" fill="#ffffff" stroke="#94a3b8" stroke-width="4" />
+  <line x1="160" y1="76" x2="160" y2="194" stroke="#cbd5e1" stroke-width="4" />
+  <circle cx="160" cy="106" r="3" fill="#64748b" />
+  <circle cx="160" cy="130" r="3" fill="#64748b" />
+  <circle cx="160" cy="154" r="3" fill="#64748b" />
+</svg>
