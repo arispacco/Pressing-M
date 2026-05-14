@@ -4,10 +4,11 @@ Application React + TypeScript de gestion de pressing.
 
 ## Fonctionnalités
 
-- Affichage des vêtements
-- État de lavage (lavé ou non)
-- État de paiement (payé ou non)
+- Affichage visuel des vêtements avec images
+- État de lavage (terminé ou en cours)
+- État de paiement (réglé ou à régler)
 - Prix par vêtement
+- Indicateur de disponibilité
 - Liste des vêtements disponibles
 
 ## Lancer le projet

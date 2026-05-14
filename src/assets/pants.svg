@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" role="img" aria-labelledby="title">
+  <title>Pantalon noir</title>
+  <rect width="320" height="240" fill="#e2e8f0" />
+  <path d="M112 44h96l18 160h-44l-22-102-22 102H94z" fill="#111827" stroke="#374151" stroke-width="4" />
+  <line x1="160" y1="44" x2="160" y2="204" stroke="#6b7280" stroke-width="4" />
+</svg>
