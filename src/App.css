@@ -1,0 +1,30 @@
+.app {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  text-align: left;
+}
+
+h1 {
+  margin-bottom: 0.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+}
+
+th,
+td {
+  border: 1px solid #d1d5db;
+  padding: 0.75rem;
+}
+
+th {
+  background-color: #f3f4f6;
+}
+
+ul {
+  margin-top: 0.5rem;
+}
