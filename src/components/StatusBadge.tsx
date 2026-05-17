@@ -14,10 +14,18 @@ const statusStyle: Record<BadgeStatus, string> = {
   PAID: 'bg-emerald-100 text-emerald-800',
 }
 
+const statusLabels: Record<BadgeStatus, string> = {
+  PENDING: 'En attente',
+  WASHED: 'Lavé',
+  DELIVERED: 'Livré',
+  UNPAID: 'Impayé',
+  PAID: 'Payé',
+}
+
 export function StatusBadge({ status }: StatusBadgeProps) {
   return (
     <span className={`inline-flex rounded-full px-2 py-1 text-xs font-semibold ${statusStyle[status]}`}>
-      {status}
+      {statusLabels[status]}
     </span>
   )
 }

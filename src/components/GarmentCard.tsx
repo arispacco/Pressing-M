@@ -5,7 +5,7 @@ import { StatusBadge } from './StatusBadge'
 
 type GarmentCardProps = {
   garment: Garment
-  onUpdated: () => Promise<void> | void
+  onUpdated: (updatedGarment: Garment) => Promise<void> | void
 }
 
 const fcfaFormatter = new Intl.NumberFormat('fr-FR')
@@ -38,13 +38,17 @@ export function GarmentCard({ garment, onUpdated }: GarmentCardProps) {
   )
 
   const handleToggleWash = async () => {
-    await garmentService.toggleWashStatus(garment.id)
-    await onUpdated()
+    const updatedGarment = await garmentService.toggleWashStatus(garment.id)
+    if (updatedGarment) {
+      await onUpdated(updatedGarment)
+    }
   }
 
   const handleTogglePayment = async () => {
-    await garmentService.togglePaymentStatus(garment.id)
-    await onUpdated()
+    const updatedGarment = await garmentService.togglePaymentStatus(garment.id)
+    if (updatedGarment) {
+      await onUpdated(updatedGarment)
+    }
   }
 
   return (

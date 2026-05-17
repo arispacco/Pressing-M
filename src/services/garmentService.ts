@@ -30,11 +30,11 @@ export const garmentService = {
     return garment.id
   },
 
-  async toggleWashStatus(id: string): Promise<void> {
+  async toggleWashStatus(id: string): Promise<Garment | undefined> {
     const garment = await db.garments.get(id)
 
     if (!garment) {
-      return
+      return undefined
     }
 
     const currentIndex = washOrder.indexOf(garment.washStatus)
@@ -42,17 +42,30 @@ export const garmentService = {
     const nextStatus = washOrder[(safeCurrentIndex + 1) % washOrder.length]
 
     await db.garments.update(id, { washStatus: nextStatus })
+    return db.garments.get(id)
   },
 
-  async togglePaymentStatus(id: string): Promise<void> {
+  async togglePaymentStatus(id: string): Promise<Garment | undefined> {
     const garment = await db.garments.get(id)
 
     if (!garment) {
-      return
+      return undefined
     }
 
     const nextStatus: PaymentStatus = garment.paymentStatus === 'UNPAID' ? 'PAID' : 'UNPAID'
 
     await db.garments.update(id, { paymentStatus: nextStatus })
+    return db.garments.get(id)
+  },
+
+  async getUniqueTypes(): Promise<string[]> {
+    const garments = await db.garments.toArray()
+    const types = new Set<string>()
+    garments.forEach((garment) => {
+      if (garment.type) {
+        types.add(garment.type.trim().toLowerCase())
+      }
+    })
+    return Array.from(types).sort((a,b) => a.localeCompare(b))
   },
 }
